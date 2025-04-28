@@ -1,0 +1,20 @@
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Cidade</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ registro.nome }}</td>
+            <td>{{ registro.cidade }}</td>
+            <td>
+                <button (click)="editar.emit(registro)">Editar</button>
+                <button (click)="excluir.emit(registro.id)">Excluir</button>
+                <button (click)="arquivar.emit(registro.id)">Arquivar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
